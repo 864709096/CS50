@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<!--hr br tag-->
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>
+            My Webpage about Python
+        </title>
+        <meta name="author" content="Qian Tan">
+        <meta name="description" content="Free Python tutorials">
+    </head>
+
+    <body>
+        <a id="top">
+        <strong>
+            Hello, This is Qian's homepage.
+            This website is about <U><i>Python</i></U> learning!<br>
+            It also links to websites on <mark>Data Science</mark>, <mark>C</mark> and <mark>R</mark> programming languages.<br>
+            <small>This website will be regularly updated.</small>
+        </strong><br>
+
+        <nav>
+            <a href = "/C.html/"> C Language </a> |
+            <a href = "/Data Science.html/"> Data Science </a> |
+            <a href = "/R.html/"> R Language </a> |
+            <a href = "https://github.com/QianTan214">My Github Page</a>
+        </nav>
+
+        <hr>
+
+        <form>
+            <p>What languages do you want to learn most? Select from drop-down list.<p>
+            <label for="language">Choose a language:</lable>
+                <select name="language" id = "language">
+                    <option value ="Python">Python</option>
+                    <option value = "Java">Java</option>
+                    <option value = "C">C</option>
+                    <option value = "R">R</option>
+                </select>
+        <br><br>
+        <input type="submit" value="Submit Form">
+        </form>
+
+        <hr>
+
+        <p><a href="#C1">Jump to Chapter 1</a></p>
+        <p><a href="#C2">Jump to Chapter 2</a></p>
+
+        <hr>
+
+        <h1 class="heading1">1. Top 5 Programming Langugage</h1>
+
+
+        <table class = "table">
+            <tr>
+                <th>Rank</th>
+                <th>Language</th>
+            <tr>
+                <td>1</td>
+                <td>Java</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><span style = "color: red">Python</span></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>C++</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>C#</td>
+            </tr>
+        </table>
+
+        <label for="java">Java:</label>
+        <meter id="java" value="16.896" min="0" max="100">16.896 out of 100</meter><br>
+        <label for="C">C:</label>
+        <meter id="C" value="15.773" min="0" max="100">15.773 out of 100</meter><br>
+        <label for="Python">Python:</label>
+        <meter id="Python" value="9.7" min="0" max="100">9.7 out of 100</meter><br>
+        <a href = "https://www.cleveroad.com/blog/programming-languages-ranking" target="_blank">Check this website for ranking</a>
+
+        <hr>
+
+        <h1 class = heading1 id="C1">2. Python Introduction</h1>
+        <p class="p1">
+            Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.<br><br>
+            It is used for:<br>
+            1. web development (server-side)<br>
+            2. software development<br>
+            3. mathematics<br>
+            4. system scripting
+        </p>
+
+        <hr>
+
+        <h1 class=heading1 id="C2">3. Data Types</h1>
+        <p class="p1">
+            <b>Some commmon data types in Python:</b><br><br>
+            1. Text: str<br>
+            2. Numeric: int, float, complex<br>
+            3. Sequence: list, tuple, range<br>
+            4. Mapping: dict<br>
+            5. Set: set<br>
+            6. Boolean: bool<br>
+            7. Binary: bytes<br>
+        </p>
+
+        <hr>
+
+        <h2 class=heading2>3.1 Data Type Examples</h2>
+
+        <p class="p1">
+            <b>Examples:</b><br><br>
+            1. str: "Hello, there";<br>
+            2. int: x=1;<br>
+            3. float: x=1.5;<br>
+            4. complex: x=3j;<br>
+            5. list: x = ["a", "b", "c"];<br>
+            6. tuple: x = ("a", "b", "c");<br>
+            7. range: x = range(10);<br>
+            8. dict: x = {"name" : "Lee", "age" : 17};<br>
+            9. bool: True or False;<br>
+            10. bytes: b"hi, there";<br>
+        </p>
+
+        <details>
+            <summary>Python Summary</summary>
+            <p>Python is a very powerful tool!</p>
+        </details>
+        <br>
+
+        <a href="#top">Go back to top</a>
+
+        <hr>
+
+        <address class= "address">
+            Written by <a href = "mailto:qiantan214@gmail.com">Qian Tan</a><br>
+            Melbourne, Australia<br>
+        </address>
+
+        <button type="button" onclick="alert('Give this website a Like')">I like this website!</button><hr>
+
+
+        <button onclick = "showContent()">Click for Hidden Content!</button>
+
+        <template>
+            <h2 style = "font-size: 35px">Have a good day!</h2>
+            <image src="surprise.jpg" width = "214", height = "204">
+        </template>
+
+        <script>
+            function showContent()
+            {
+                var temp = document.getElementsByTagName("template")[0];
+                var clon = temp.content.cloneNode(true);
+                document.body.appendChild(clon);
+            }
+        </script>
+
+
+
+    </body>
+</html>
